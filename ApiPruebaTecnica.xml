@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiPruebaTecnica</name>
+    </assembly>
+    <members>
+        <member name="M:ApiPruebaTecnica.Controllers.UsuarioController.GetAll">
+            <summary>
+             Obtiene el listado de usuarios
+            </summary>
+            <returns>Listado de usuarios</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al consultar los usuarios</response>
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.UsuarioController.Post(ApiPruebaTecnica.Models.UsuarioModel)">
+            <summary>
+            Adiciona un nuevo usuario
+            </summary>
+            <param name="usuario">Objeto con la información del usuario que se creará</param>
+            <returns>valor que indica si el registro se realizo de forma exitosa</returns>
+            <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al adicionar un usuario</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.UsuarioController.Put(ApiPruebaTecnica.Models.UsuarioModel)">
+            <summary>
+            Actualiza el la información de un usuario.
+            </summary>
+            <param name="usuario">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se actualizó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al actualizar un usuario</response>        
+        </member>
+        <member name="M:ApiPruebaTecnica.Controllers.UsuarioController.Delete(System.Int32)">
+            <summary>
+            Elimina usuario por id.
+            </summary>
+            <param name="id">objeto que contiene la información actualizada</param>
+            <returns>valor que indica si el registró se eliminó correctamente.</returns>
+             /// <response code="200">Operación finalizada exitosamente</response>
+            <response code="500">Se presentó un error interno al eliminar un usuario</response>        
+        </member>
+    </members>
+</doc>
