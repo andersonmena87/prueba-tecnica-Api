@@ -34,9 +34,9 @@ namespace ApiPruebaTecnica
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
             services.AddControllers(options => options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
             services.AddSingleton(connectionString);
+            
             #region Scopeds
             services.AddScoped<IUsuarioBL, UsuarioBL>();
-
             #endregion
 
         }
