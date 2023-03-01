@@ -6,7 +6,7 @@ namespace ApiPruebaTecnica.Models
     {
         [Key]
         public Int16 Id { get; set; }
-
+ 
         public string? Nombre { get; set; }
 
         [DataType(DataType.Date)]

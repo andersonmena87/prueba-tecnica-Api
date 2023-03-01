@@ -17,7 +17,7 @@ namespace ApiPruebaTecnica
 
         public void ConfigureServices(IServiceCollection services)
         {
-            string nombreEnsamblado = Assembly.GetExecutingAssembly().GetName().Name;
+            string? nombreEnsamblado = Assembly.GetExecutingAssembly().GetName().Name;
             string abreviacionAmbiente = Configuration["Configuration:environment"].ToLower();
             string connectionString = Configuration.GetConnectionString(String.Format("{0}{1}", abreviacionAmbiente, "ConexionSqlServer"));
 
@@ -43,7 +43,7 @@ namespace ApiPruebaTecnica
 
         public void Configure(IApplicationBuilder app)
         {
-            string nombreEnsamblado = Assembly.GetExecutingAssembly().GetName().Name;
+            string? nombreEnsamblado = Assembly.GetExecutingAssembly().GetName().Name;
             string abreviacionAmbiente = Configuration["Configuration:environment"].ToLower();
 
             app.UseSwagger();
